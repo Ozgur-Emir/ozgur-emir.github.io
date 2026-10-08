@@ -43,6 +43,12 @@ h2::after{content:"";display:block;width:56px;height:4px;background:var(--hot);m
 .card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:1.5rem;transition:border-color .2s,transform .2s}
 .card:hover{border-color:var(--hot);transform:translateY(-3px)}
 .card h3{font-size:1.15rem;margin-bottom:.3rem}
+.head{display:flex;gap:.9rem;align-items:center;margin-bottom:.4rem}
+.head .when{margin-bottom:0}
+.head h3{margin-bottom:.1rem}
+.mini{height:46px;width:auto;max-width:120px;flex:none;object-fit:contain;background:#fff;border-radius:8px;padding:6px 8px}
+.contact p a{text-decoration:none}
+.contact p a:hover{text-decoration:underline;text-underline-offset:.3em}
 .when{color:var(--cool);font-size:.9rem;margin-bottom:.8rem}
 .card p{margin:0;color:var(--muted);font-size:.98rem}
 .tl{border-left:2px solid var(--line);padding-left:1.5rem;display:grid;gap:1.25rem}
@@ -88,7 +94,7 @@ footer{color:var(--muted);text-align:center;font-size:.9rem;padding:2rem 0}
       <p class="lead">Mechanical Engineer and Energy Systems Engineering student. I work on CFD, turbomachinery, and thermal-fluid systems.</p>
       <div class="btns">
         <a class="btn main" href="#projects">View projects</a>
-        <a class="btn alt" href="Ozgur_Emir_Colban_CV.pdf">Download CV</a>
+        <a class="btn alt" href="./Ozgur_Emir_Colban_CV.pdf" target="_blank" rel="noopener">View CV</a>
       </div>
     </div>
   </div>
@@ -111,9 +117,9 @@ footer{color:var(--muted);text-align:center;font-size:.9rem;padding:2rem 0}
     <h2>Experience</h2>
     <p class="sub">Research, energy systems, and aerospace manufacturing.</p>
     <div class="tl">
-      <div class="card"><h3>TÜBA Research Scholar &amp; Laboratory Assistant</h3><div class="when">Yaşar University | Feb 2026 - Present</div><p>Part-time student researcher in the university laboratory under the TÜBA research scholarship. I contribute to the Yaşar University Scientific Research Project (BAP) on spiral ground heat exchangers, focusing on energy and exergy-based optimization.</p></div>
-      <div class="card"><h3>Intern, Eren Enerji</h3><div class="when">Aug 2025 - Sep 2025</div><p>Assisted in routine mechanical maintenance of energy systems and equipment, with hands-on work in energy production processes, troubleshooting, and preventive maintenance.</p></div>
-      <div class="card"><h3>Intern, Turkish Aerospace Industries (TUSAŞ)</h3><div class="when">Jul 2025 - Aug 2025</div><p>Contributed to the system assembly of KAAN (MMU) aircraft systems and worked with engineering teams on system integration and quality control procedures.</p></div>
+      <div class="card"><div class="head"><img class="mini" src="images/logos/yasar.png" alt="Yaşar University logo" onerror="this.style.display='none'"><div><h3>TÜBA Research Scholar &amp; Laboratory Assistant</h3><div class="when">Yaşar University | Feb 2026 - Present</div></div></div><p>Part-time student researcher in the university laboratory under the TÜBA research scholarship. I contribute to the Yaşar University Scientific Research Project (SRP) on spiral ground heat exchangers, focusing on energy and exergy-based optimization.</p></div>
+      <div class="card"><div class="head"><img class="mini" src="images/logos/eren-enerji.png" alt="Eren Enerji logo" onerror="this.style.display='none'"><div><h3>Intern, Eren Enerji</h3><div class="when">Aug 2025 - Sep 2025</div></div></div><p>Assisted in routine mechanical maintenance of energy systems and equipment, with hands-on work in energy production processes, troubleshooting, and preventive maintenance.</p></div>
+      <div class="card"><div class="head"><img class="mini" src="images/logos/tusas.png" alt="TUSAŞ logo" onerror="this.style.display='none'"><div><h3>Intern, Turkish Aerospace Industries (TUSAŞ)</h3><div class="when">Jul 2025 - Aug 2025</div></div></div><p>Contributed to the system assembly of KAAN (MMU) aircraft systems and worked with engineering teams on system integration and quality control procedures.</p></div>
     </div>
   </section>
 
@@ -123,7 +129,7 @@ footer{color:var(--muted);text-align:center;font-size:.9rem;padding:2rem 0}
 
     <article class="proj">
       <div class="body">
-        <h3>Silent Energy Efficient Radial Flow Fan</h3>
+        <div class="head"><img class="mini" src="images/logos/bosch.png" alt="BOSCH logo" onerror="this.style.display='none'"><h3>Silent Energy Efficient Radial Flow Fan</h3></div>
         <p>Graduation project. Multi-objective aerodynamic and acoustic optimization of a radial flow fan, carried out with BOSCH and supported by TÜBİTAK 2209-B. I compared impeller blade geometries and passive flow control methods, analyzed efficiency, pressure rise, and noise with CFD, and validated the results against experimental measurements.</p>
         <ul class="tags"><li>Ansys Fluent</li><li>CFD</li><li>Aeroacoustics</li><li>TÜBİTAK 2209-B</li></ul>
       </div>
@@ -159,9 +165,11 @@ footer{color:var(--muted);text-align:center;font-size:.9rem;padding:2rem 0}
       <div class="bar"><span>Python</span><i><b style="width:30%"></b></i><em>Basic</em></div>
       <div class="bar"><span>EES</span><i><b style="width:30%"></b></i><em>Basic</em></div>
     </div>
+    <h2 style="margin-top:3rem">Personal Skills</h2>
+    <ul class="tags" style="margin-top:2rem"><li>Problem-Solving</li><li>Analytical Thinking</li><li>Teamwork</li><li>Responsibility</li><li>Time Management</li><li>Adaptability</li><li>Creativity</li></ul>
     <h2 style="margin-top:3rem">Courses &amp; Languages</h2>
     <div class="grid" style="margin-top:2rem">
-      <div class="card"><h3>TEI Aviation Engines School</h3><div class="when">TUSAŞ Engine Industries | Feb 2026 - May 2026</div><p>Aircraft engines, gas turbines, engine performance, control systems, testing, manufacturing, and quality processes.</p></div>
+      <div class="card"><div class="head"><img class="mini" src="images/logos/tei.png" alt="TEI logo" onerror="this.style.display='none'"><div><h3>TEI Aviation Engines School</h3><div class="when">TUSAŞ Engine Industries | Feb 2026 - May 2026</div></div></div><p>Aircraft engines, gas turbines, engine performance, control systems, testing, manufacturing, and quality processes.</p></div>
       <div class="card"><h3>Gen Academy Program</h3><div class="when">Jan 2025 - May 2025</div><p>Software technologies and artificial intelligence.</p></div>
       <div class="card"><h3>Languages</h3><div class="when">Spoken</div><p>Turkish (native), English (B2+, upper-intermediate).</p></div>
     </div>
@@ -171,10 +179,14 @@ footer{color:var(--muted);text-align:center;font-size:.9rem;padding:2rem 0}
     <div class="contact">
       <h2>Let's talk</h2>
       <p class="sub" style="margin-inline:auto">I am open to defense, aerospace, and energy roles. Based in Bornova, Izmir.</p>
+      <p style="margin:0 0 1.5rem">
+        <a href="mailto:ozguremir_8002@outlook.com">ozguremir_8002@outlook.com</a><br>
+        <a href="tel:+905558896434">+90 555 889 6434</a>
+      </p>
       <div class="btns" style="justify-content:center">
-        <a class="btn main" href="mailto:ozguremir_8002@outlook.com">Email me</a>
-        <a class="btn alt" href="https://www.linkedin.com/in/LINKEDIN_ADIN">LinkedIn</a>
-        <a class="btn alt" href="https://github.com/KULLANICI_ADIN">GitHub</a>
+        <a class="btn main" href="https://www.linkedin.com/in/%C3%B6zg%C3%BCr-emir-%C3%A7olban-4391a9357/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn alt" href="mailto:ozguremir_8002@outlook.com">Email me</a>
+        <a class="btn alt" href="./Ozgur_Emir_Colban_CV.pdf" target="_blank" rel="noopener">View CV</a>
       </div>
     </div>
   </section>
